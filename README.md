@@ -12,7 +12,6 @@ Base features:
 Challenges:
  - Need to allow for long operations (ex "5+5/5-5*5") and accurately parse via PEMDAS .
  - I want to use a custom "pretty" Swing theme.
- - Learn how to use the GridBag layout in Java swing for more a refined app layout.
 
 Calculator layout:
 
@@ -28,4 +27,4 @@ Limitations:
  - No decimal # entry.
  - No single backspace.
  - Only 4 basic operations.
- - Input can offscreen with no way to check without clearing.
+ - Max expression length of 29 characters.
