@@ -1,6 +1,6 @@
 # SimpleGUICalculator
 
-A basic Java swing application that allows users to add, subtract, divide, and multiply numbers.
+A basic Java swing application that allows users to add, subtract, divide, and multiply integers.
 
 Base features: 
  - Buttons for each # (1-9).
@@ -9,19 +9,10 @@ Base features:
  - Clear button (C).
  - Label that shows the operation as user builds it.
 
-Optional feature: 
- - Backspace button.
- - Decimal point button.
- - Positive or negative selection button.   (!!! Not sure about this one. !!!)
- - Allow user to type in operation manually without using buttons.
- - Light-mode, dark-mode theme switcher button.
-
-
 Challenges:
- - Need to allow for long operations (ex "5+5+5/5-5+5+5*5").
- - I want to use a custom "pretty" theme.
- - Learn how to use the GridBag layout in Java swing for more precise app layout.
-
+ - Need to allow for long operations (ex "5+5/5-5*5") and accurately parse via PEMDAS .
+ - I want to use a custom "pretty" Swing theme.
+ - Learn how to use the GridBag layout in Java swing for more a refined app layout.
 
 Calculator layout:
 
@@ -32,10 +23,9 @@ Calculator layout:
     7   8   9   *      
     C   0   =   /
 
-    ~OPTIONAL~
-    [_______________________]
-    <X]     C       (L/D)   /
-    1       2       3       +
-    4       5       6       -
-    7       8       9       *      
-    (+/-)   0       .       =
+Limitations:
+ - No negative # entry.
+ - No decimal # entry.
+ - No single backspace.
+ - Only 4 basic operations.
+ - Input can offscreen with no way to check without clearing.
